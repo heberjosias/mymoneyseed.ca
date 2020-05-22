@@ -1,21 +1,35 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+/*import { Link } from "gatsby"*/
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import {Hero, Intro, Button} from '../components/ui/General';
+import Layout from "../components/layout/layout";
+import SEO from "../components/layout/seo";
+import HeroImage from '../components/img/hero';
+import IntroImg from '../components/img/intro';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+
+const IndexPage = () => {
+
+return ( 
+
+    <Layout>
+    <SEO/>    
+      <Hero>
+        <div>
+          <h1>My Money Seed</h1>
+          <p>We are a community of financial professional on a mission to deliver financial education and revolutionize the financial service industry through a reliable system.</p>
+          <Button>Contact</Button>
+        </div>
+        <HeroImage/>
+      </Hero>
+      <Intro>
+        <p>Our purpose is to provide a general understanding about financial concepts and information with professionalism of a proper institution without the confusing and complex terms.</p>
+        <IntroImg/>
+      </Intro>  
   </Layout>
-)
 
-export default IndexPage
+   );
+}
+ 
+export default IndexPage ;
+

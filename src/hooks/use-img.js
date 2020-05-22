@@ -8,6 +8,11 @@ const UseImg = () => {
             allDatoCmsHome(filter:{ slug: {eq:"home"} }){
             nodes{
                 id
+                logo{
+                    fluid{
+                        ...GatsbyDatoCmsFluid
+                    }
+                }                
                 hero{
                     fluid{
                         ...GatsbyDatoCmsFluid

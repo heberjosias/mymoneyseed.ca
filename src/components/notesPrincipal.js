@@ -11,10 +11,11 @@ const Title = styled.h2`
 `;
 
 const Container = styled.div`
-    padding:0 10%;
+    padding:0 5%;
     display:grid;
     row-gap:3rem;
-    @media (min-width: 768px) {        
+    @media (min-width: 768px) {    
+        padding:0 10%;    
         grid-template-columns: repeat(3,1fr);
         gap:3rem;
     }     

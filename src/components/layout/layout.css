@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;600;1,400&display=swap');
 
 html {
   -ms-text-size-adjust: 100%;
@@ -22,8 +22,9 @@ a:hover {
   outline-width: 0;
 }
 strong {
-  font-weight: inherit;
+  font-weight: 700;
   font-weight: bolder;
+  color:#03989E;
 }
 svg:not(:root) {
   overflow: hidden;

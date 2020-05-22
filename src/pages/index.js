@@ -1,14 +1,16 @@
 import React from "react";
-/*import { Link } from "gatsby"*/
+import Image from 'gatsby-image';
 
 import {Hero, Intro, Button} from '../components/ui/General';
 import Layout from "../components/layout/layout";
 import SEO from "../components/layout/seo";
-import HeroImage from '../components/img/hero';
-import IntroImg from '../components/img/intro';
+import UseImg from '../hooks/use-img';
 
+import NotesPrincipal from '../components/notesPrincipal';
 
 const IndexPage = () => {
+
+  const images = UseImg();
 
 return ( 
 
@@ -20,12 +22,19 @@ return (
           <p>We are a community of financial professional on a mission to deliver financial education and revolutionize the financial service industry through a reliable system.</p>
           <Button>Contact</Button>
         </div>
-        <HeroImage/>
+        <Image
+            fluid={images.hero.fluid}
+            alt="My Money Seed"
+        />        
       </Hero>
       <Intro>
         <p>Our purpose is to provide a general understanding about financial concepts and information with professionalism of a proper institution without the confusing and complex terms.</p>
-        <IntroImg/>
+        <Image
+            fluid={images.intro.fluid}
+            alt="My Money Seed"
+        />        
       </Intro>  
+      <NotesPrincipal/>
   </Layout>
 
    );

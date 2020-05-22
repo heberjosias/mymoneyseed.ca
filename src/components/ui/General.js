@@ -90,6 +90,10 @@ export const Form = styled.div`
         padding: 0 0 1rem 0;
       }
       form{
+        padding: 0%;
+        @media (min-width: 768px) {            
+          padding: 1% 10% 0 10%;
+        }
         input{
           width: 100%;
           padding:1rem;
@@ -114,6 +118,7 @@ export const InputSubmit = styled.input`
   box-shadow: 0px 1px 2px 1px rgba(0,0,0,.2);
   text-transform: uppercase;
   font-size: 1.2rem;  
+  font-weight: 600;
   font-family: 'Montserrat', sans-serif;  
   &:hover{
       background: #03989E;
@@ -146,4 +151,8 @@ export const Button = styled.a`
           color:#ffffff;   
           box-shadow: 0px 1px 2px 1px rgba(0,0,0,.2);
       }
+`;
+
+export const Footer = styled.footer`
+      text-align:center;
 `;

@@ -10,9 +10,6 @@ const Layout = ({ children }) => {
     <>
       <Header/>
       <main>{children}</main>
-      <footer>        
-        <p>© {new Date().getFullYear()} My Money Seed</p>
-      </footer>
     </>
   )
 }

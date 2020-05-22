@@ -11,8 +11,8 @@ const Note = styled.div`
     border: 1px solid #F7F7F7;     
     box-shadow: 0px 1px 2px 1px rgba(0,0,0,.3);
     &:hover{
-        transform: scale(1.1);
-        transition-duration: 1seg;
+        transform: scale(1.05);
+        transition: all 0.3s ease-out;       
     }
 `;
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from 'gatsby-image';
 
-import {Hero, Intro, Analytics, AnalyticsImg, Finance, CTA, Form, InputSubmit, Button} from '../components/ui/General';
+import {Hero, Intro, Analytics, AnalyticsImg, Finance, CTA, Form, InputSubmit, Button, Footer} from '../components/ui/General';
 import Layout from "../components/layout/layout";
 import SEO from "../components/layout/seo";
 import UseImg from '../hooks/use-img';
@@ -120,6 +120,9 @@ return (
         </form>
       </Form>
       <NotesPrincipal/>
+      <Footer>        
+        <p>© {new Date().getFullYear()} My Money Seed</p>
+      </Footer>
   </Layout>
 
    );

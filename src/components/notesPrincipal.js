@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-import {Button} from './ui/General';
+/*import {Button} from './ui/General';*/
 import UseNotes from '../hooks/use-notes';
 import NotePreview from './notePreview';
 
@@ -15,7 +15,7 @@ const Container = styled.div`
     display:grid;
     row-gap:3rem;
     @media (min-width: 768px) {    
-        padding:0 10%;    
+        padding:0 10% 4% 10%;    
         grid-template-columns: repeat(3,1fr);
         gap:3rem;
     }     
@@ -44,9 +44,6 @@ const NotesPrincipal = () => {
             />                    
         ))} 
         </Container>
-        <More>
-            <Button>More</Button>
-        </More>
         </>
      );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from 'gatsby-image';
+import { Link } from "gatsby";
 
 import {Logo, Hero, Intro, Analytics, AnalyticsImg, Finance, CTA, Form, InputSubmit, Button, Footer} from '../components/ui/General';
 import Layout from "../components/layout/layout";
@@ -26,7 +27,9 @@ return (
           </Logo>
           <h1>My Money Seed</h1>
           <p>We are a community of financial professional on a mission to deliver financial education and revolutionize the financial service industry through a reliable system.</p>
-          <Button>Contact</Button>
+          <Link to="/#contact">
+            <Button>Contact</Button>
+          </Link>
         </div>
         <Image
             fluid={images.hero.fluid}

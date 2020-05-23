@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 function SEO({lang, meta}) {
 
   return (
-    <Helmet
+    <Helmet    
       htmlAttributes={{
         lang,
       }}

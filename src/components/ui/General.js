@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Hero = styled.div`
-    padding: 0 5%;    
+    padding: 0 5% 1% 5%;    
     display: grid;
     @media (min-width: 768px) {
       grid-template-columns: repeat(2, 1fr);
@@ -23,7 +23,7 @@ export const Hero = styled.div`
 `;
 
 export const Logo = styled.div`
-      max-width:300px;  
+      max-width:320px;  
       padding:0;
       margin:0;
 `;
@@ -60,7 +60,7 @@ export const Finance = styled.div`
 `;
 
 export const CTA = styled.div`
-    padding: 4% 5% 4% 5%; 
+    padding: 4% 5% 0% 5%; 
     align-items:center;        
     @media (min-width: 768px) {
       display:grid;
@@ -76,9 +76,9 @@ export const CTA = styled.div`
 `;
 
 export const Form = styled.div`
-      padding: 0% 5% 2% 5%;
+      padding: 5% 5% 2% 5%;
       @media (min-width: 768px) {            
-        padding: 0% 10% 2% 10%;
+        padding: 5% 10% 2% 10%;
       }
       h2{
         text-align:center;

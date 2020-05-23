@@ -1,7 +1,7 @@
 import React from 'react';
 import { Form, InputSubmit} from '../components/ui/General';
 
-const Contact = () => {
+const Contact = () => {  
     return ( 
         <Form id="contact">
         <h2>Are you interested in taking any of our free workshops?</h2>
@@ -21,7 +21,7 @@ const Contact = () => {
               name="email"
               placeholder="Email*"
             />
-            <label htmlFor="name">Email</label>
+            <label htmlFor="name">Phone</label>
             <input
               type="text"
               id="phone"

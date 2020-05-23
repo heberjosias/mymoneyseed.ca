@@ -76,9 +76,9 @@ export const CTA = styled.div`
 `;
 
 export const Form = styled.div`
-      padding: 5% 5% 2% 5%;
+      padding: 5% 5% 5% 5%;
       @media (min-width: 768px) {            
-        padding: 5% 10% 2% 10%;
+        padding: 2% 10% 2% 10%;
       }
       h2{
         text-align:center;

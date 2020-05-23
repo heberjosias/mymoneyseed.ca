@@ -1,7 +1,31 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+exports.createPages = async ({ actions, graphql, reporter }) => {
+    const resultado = await graphql(`
+        query {
+            allDatoCmsBlog(filter:{ active: {eq:true} }){
+                nodes {
+                    slug
+                }
+            }
+        }
+    `);
 
-// You can delete this file if you're not using it
+    // console.log(resultado.data.allDatoCmsBlog.nodes);
+
+    if(resultado.errors) {
+        reporter.panic('No hubo resultados ', resultado.errors);
+    }
+
+    // Si hay paginas, crear los archivos
+    const notes = resultado.data.allDatoCmsBlog.nodes;
+
+    notes.forEach(note => {
+        actions.createPage({
+            path: note.slug,
+            component: require.resolve('./src/components/notes.js'),
+            context: {
+                slug: note.slug
+            }
+        })
+    })
+    
+}
